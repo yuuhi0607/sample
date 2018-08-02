@@ -22,8 +22,10 @@ public struct ListOrganizationRepositoriesParam: Codable {
 //        case authToken = "auth_token"
 //    }
     
-    public init() { /*仮実装*/ }
+    public init() { }
 }
 
+
+/// GithubのOrganizationリポジトリ一覧を取得する
 public protocol ListOrganizationRepositories: ApiRequestProtocol where RequestParamTypes == ListOrganizationRepositoriesParam, ResponseTypes == [ListOrganizationRepositoryEntity] {
 }

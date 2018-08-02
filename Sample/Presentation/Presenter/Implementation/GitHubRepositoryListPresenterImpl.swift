@@ -33,6 +33,7 @@ public class GitHubRepositoryListPresenterImpl: GitHubRepositoryListPresenter {
     }
     
     public func viewDidLoad() {
+        //データ取得中はローディングを表示させる
         viewController?.showLoading()
         useCase.loadRepositoryList().subscribe(onSuccess: { [unowned self]() in
             self.viewController?.dismissLoading()

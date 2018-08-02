@@ -12,7 +12,6 @@ import RxSwift
 
 public protocol GithubRepository {
     
-    
     /// ローカルに取得済みが存在するか
     ///
     /// - Returns: true: ある, false: ない

@@ -22,4 +22,11 @@ public struct ListOrganizationRepositoriesImpl: ListOrganizationRepositories {
         //サンプルのためOrganizationは固定
         url = Constants.ApiBaseUrl + "/orgs/mixi-inc/repos"
     }
+    
+//    /// 取得するOrganizationを変更する場合
+//    ///
+//    /// - Parameter organization: Organization
+//    public init(organization: String) {
+//        url = Constants.ApiBaseUrl + "/orgs/\(organization)/repos"
+//    }
 }

@@ -1028,7 +1028,6 @@
 			isa = PBXGroup;
 			children = (
 				8E7A07ED21130E5B0078E732 /* Entity */,
-				8E7A07EC21130E4C0078E732 /* Local */,
 				8E7A07EB21130E440078E732 /* NetworkApi */,
 				8E7A09222113239A0078E732 /* RepositoryImpl */,
 			);
@@ -1042,13 +1041,6 @@
 				8E7A08052113103D0078E732 /* Implementation */,
 			);
 			path = NetworkApi;
-			sourceTree = "<group>";
-		};
-		8E7A07EC21130E4C0078E732 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Local;
 			sourceTree = "<group>";
 		};
 		8E7A07ED21130E5B0078E732 /* Entity */ = {
