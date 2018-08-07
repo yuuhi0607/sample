@@ -97,10 +97,11 @@ class GithubRepositoryImplSpec: QuickSpec {
                 })
             })
             
-            it("test", closure: {
+            it("loadFromNetworkApi", closure: {
                 waitUntil(action: { (done) in
                     target.loadFromNetworkApi().subscribe(onSuccess: { (ret) in
                         expect(ret).to(haveCount(1))
+                        //JSONのnameキーからデータを取得していること
                         expect(ret.first?.name).to(equal("Hello-World"))
                         done()
                     }).disposed(by: disposeBag)
